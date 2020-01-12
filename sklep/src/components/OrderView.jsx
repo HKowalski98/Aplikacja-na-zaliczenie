@@ -32,10 +32,6 @@ export default class OrderView extends Component{
         this.orderUsername = this.orderUsername.bind(this);
         this.orderEmail = this.orderEmail.bind(this);
         this.orderPhone = this.orderPhone.bind(this);
-        this.dupa = this.dupa.bind(this);
-
-       
-        
 }
 
 componentDidMount(){
@@ -173,12 +169,6 @@ if((this.state.email !== '') && (this.state.phone !== '')){
 else { 
     alert('Adres email i/lub telefon nie moga byc puste!')
 }
-}
-
-
-dupa(){
-    console.log(this.state.order);
-    console.log(this.state.sum);
 }
 
 renderOrderView(){

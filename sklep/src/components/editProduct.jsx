@@ -65,14 +65,14 @@ export default class editProduct extends Component{
         }
         cats.unshift(category);
         this.setState({productsList : products, categories: cats})
-        console.log(this.state.productsList)
+        //console.log(this.state.productsList)
         //console.log(this.state.categories)
         
     }
    onChangeCategory(e){
-       console.log(e.target.value)
+       //console.log(e.target.value)
        this.setState({filteredCategory: e.target.value})
-       console.log(this.state.filteredCategory)
+       //console.log(this.state.filteredCategory)
    }
 
 

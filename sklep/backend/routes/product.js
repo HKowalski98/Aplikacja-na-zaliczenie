@@ -24,7 +24,7 @@ router.route('/').get((req, res) => {
 });*/
 
 //POST app_url/products
-router.route('/').post((req,res,next) => {
+router.route('/').post((req,res) => {
     const name = req.body.name;
     const description = req.body.description;
     const price = Number(req.body.price);

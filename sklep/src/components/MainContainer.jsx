@@ -32,12 +32,13 @@ productAddToOrder(product){
     order.forEach((prod)=> {
         if(prod.name === product.name) 
         {
-        alert("Produkt znajduje sie juz w koszyku. Jego ilość mozesz zmienić w koszyku.")
+            alert("Produkt znajduje sie juz w koszyku. Jego ilość mozesz zmienić w koszyku.")
         exist = true
         }
     }) 
     if(!exist){
         order.push(product)
+        alert("Produkt został dodany do koszyka.")
         this.setState({order})
     }
     

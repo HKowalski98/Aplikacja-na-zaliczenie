@@ -37,9 +37,9 @@ export default class CreateProduct extends Component{
         this.setState({price: e.target.value});
     } 
     onChangeUnit(e){
-        console.log(e.target.value)
+        //console.log(e.target.value)
         this.setState({unit: e.target.value});
-        console.log(this.state.unit)
+        //console.log(this.state.unit)
     } 
     onChangeCategory(e){
         this.setState({category: e.target.value});
